@@ -256,7 +256,8 @@ uint8_t setSSA( uint8_t previousSSA, uint8_t newSSA )
         delay(10);
                
         if ( 0 == URM07.Read(newSSA,1,1) )
-        {           
+        {   
+            ret = 0;
             break;           
         } 
 
